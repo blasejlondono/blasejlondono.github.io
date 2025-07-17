@@ -31,13 +31,13 @@ resume-url: assets/resume/londono_blase_resume.pdf
 # Set up external links - this will show up as small icons next to your name.
 
 external-links:    # input only your own url slug. The icons with missing entries will not appear.
-  linkedin: https://www.linkedin.com/blase-londono    # https://www.linkedin.com/in/{your url slug} 
-  github: https:github.com/blasejlondono    # https://github.com/{your url slug} 
+  linkedin: blase-londono    # https://www.linkedin.com/in/{your url slug} 
+  github: blasejlondono    # https://github.com/{your url slug} 
   stackoverflow:      # https://stackoverflow.com/users/{your url slug}
   medium:            # https://medium.com/@{your url slug} 
   x-twitter:   # https://x.com/{your url slug} 
   threads:            # https://threads.net/@{your url slug} 
-  instragram: instagram/com/blaselondono      # https://instagram.com/{your url slug} 
+  instragram: blaselondono      # https://instagram.com/{your url slug} 
   youtube:           # https://youtube.com/@{your url slug} 
   discord:            # https://discord.com/users/{your url slug} 
   bluesky:           # https://bsky.app/profile/{your url slug} 
