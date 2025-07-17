@@ -7,13 +7,13 @@
 
 # Main Page Setup
 
-title: Blase Londono's Portfolio # This is what shows up in the tab of the browser
+title: Blase Londoño's Portfolio # This is what shows up in the tab of the browser
 
 
 
 # Hero Section
-name: Blase Londono
-headline: Mechanical Engineering at UC San Diego
+name: Blase Londoño
+headline: Mechanical Engineering Undergraduate Student at UC San Diego
 description: >- # dont remove this line. this will ignore all new lines until the next section
   Write an awesome intro and discuss your highlights and qualification. You can edit this
   line in _config.yml. It will appear in your document head meta (for
