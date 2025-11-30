@@ -6,6 +6,7 @@ description: I developed a custom LSTM neural network using the MATLAB Deep Lear
 paper: /matlab-ml-paper/londono_blase_dlpaper.pdf
 
 skills: 
-- MATLAB
+- MATLAB Deep Learning Toolbox
+- Academic Writing
 main-image: /pirouette.jpg
 ---
