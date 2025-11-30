@@ -316,6 +316,7 @@ nav .mobile-nav {
     max-width: 100%; 
     aspect-ratio: 3/1;
     object-fit: cover;
+    object-position: top;
     display: block;
     border-radius: 6px;
     margin-bottom: 10px; 
