@@ -65,7 +65,7 @@ skills:
     - LaTeX
  
 # Contact Form Setup. 
-formspree-key:   https://formspree.io/f/mjkngqoz
+formspree-key: https://formspree.io/f/mjkngqoz
 
 # Active theme 
 colors: # this is the basic theme
