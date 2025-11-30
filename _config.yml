@@ -30,22 +30,39 @@ external-links:    # input only your own url slug. The icons with missing entrie
   
 # Skills Section - Add the list of your Skills by categories/tools. The indentation for each level needs to be precise. 
 skills:
-  - category: 3D Modeling
+  category: CAD & Modeling
     tools:
-    - Onshape
-    - AutoCAD
-    - Fusion 360
-  - category: Prototyping
+    - OnShape
+    - Autodesk Fusion 360
+    - Autodesk AutoCAD
+    
+  - category: Prototyping & Fabrication
     tools:
     - 3D Printing
-    - CNC
     - Laser Cutting
-    - Arduino
+    - CNC Machining
+    - Soldering
     - Breadboarding
-  - category: PCB Design
+    
+  - category: Electronics & PCB Design
     tools:
     - Altium Designer
-
+    - Arduino
+    - Circuit Design
+    
+  - category: Programming
+    tools:
+    - MATLAB
+    - Python
+    - Java
+    - Arduino C
+    - HTML/CSS
+    
+  - category: Visual Design
+    tools:
+    - Canva
+    - LaTeX
+ 
 # Contact Form Setup. Setup an account and copy over the key. When someone fills out the form, it will be received in your email.
 formspree-key:   https://formspree.io/f/mjkngqoz
 
