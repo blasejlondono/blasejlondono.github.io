@@ -63,9 +63,6 @@ skills:
     tools:
     - Canva
     - LaTeX
- 
-# Contact Form Setup. 
-formspree-key: https://formspree.io/f/mjkngqoz
 
 # Active theme 
 colors: # this is the basic theme
