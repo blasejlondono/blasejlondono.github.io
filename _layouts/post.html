@@ -20,7 +20,12 @@ layout: wrapper
         </div>
         
         {% if page.paper %}
-        <a href="{{ page.paper }}" target="_blank" class="paper-link">View Analysis Paper (PDF)</a>
+        <div    class="paper-link-container">
+        <a href="{{ page.paper }}" target="_blank" class="paper-link">
+            <span class="paper-icon">📄</span>
+        View Analysis Paper (PDF)
+        </a>
+        </div>
         {% endif %}
         
         <div class="skills-card">
@@ -30,7 +35,6 @@ layout: wrapper
                 <span class="skill">{{ skill }}</span>    
                 {% endfor %}
             </div>
-            
         </div>
     </div>
       
