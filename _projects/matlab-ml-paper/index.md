@@ -7,5 +7,5 @@ paper: _projects/matlab-ml-paper/londono_blase_dlpaper.pdf
 skills: 
 - MATLAB Deep Learning Toolbox
 - Academic Writing
-main-image: /pirouette.jpg
+main-image: /training.png
 ---
