@@ -8,15 +8,14 @@ description: | # dont remove this line. this will ignore all new lines until the
   I'm drawn to engineering for the fast-paced problem-solving and the opportunity to work with talented people on challenging technical projects. Whether I'm designing power distribution systems for Mars rovers, prototyping airless tire systems, or teaching MATLAB to 35+ students, I enjoy building systems that work and collaborating with teams that push the boundaries of what's possible. <br><br>
   I'm currently involved with UCSD Yonder Dynamics, IEEE-HKN, Apple's Next-Gen Innovators program, and undergraduate research in semiconductor characterization. As I continue through my degree, I'm focused on finding the right area within robotics to commit to long-term and make a meaningful impact. <br><br>
 
-# Place your profile image in /assets/images/profile-image/folder and edit the file name
+# Profile image 
 profile_image: /assets/images/profile-image/profile_picture.jpg
 
-# Link your resume
-# You can place your resume in assets/resume/{resume file.pdf} or add external link such as pdf saved in google drive 
+# Link resume
 resume-url: /assets/resume/londono_blase_resume.pdf
 
-# Set up external links - this will show up as small icons next to your name.
-external-links:    # input only your own url slug. The icons with missing entries will not appear.
+# Set up external links
+external-links:    # input only url slug.
   linkedin: blase-londono    # https://www.linkedin.com/in/{your url slug} 
   github: blasejlondono      # https://github.com/{your url slug} 
   stackoverflow:             # https://stackoverflow.com/users/{your url slug}
@@ -28,7 +27,7 @@ external-links:    # input only your own url slug. The icons with missing entrie
   discord:                   # https://discord.com/users/{your url slug} 
   bluesky:                   # https://bsky.app/profile/{your url slug} 
   
-# Skills Section - Add the list of your Skills by categories/tools. The indentation for each level needs to be precise. 
+# Skills Section
 skills:
   - category: CAD & Modeling
     tools:
@@ -56,18 +55,19 @@ skills:
     - Python
     - Java
     - Arduino C
-    - HTML/CSS
-    - Git/GitHub
+    - HTML
+    - CSS
+    - Git
     
   - category: Visual Design
     tools:
     - Canva
     - LaTeX
  
-# Contact Form Setup. Setup an account and copy over the key. When someone fills out the form, it will be received in your email.
+# Contact Form Setup. 
 formspree-key:   https://formspree.io/f/mjkngqoz
 
-# Active theme (Updatethis to switch themes). Make sure to keep the indentation the samne.
+# Active theme 
 colors: # this is the basic theme
   text: "#1a1c20"
   border: "#ddd"
