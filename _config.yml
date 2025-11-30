@@ -19,14 +19,11 @@ description: >- # dont remove this line. this will ignore all new lines until th
 # Place your profile image in /assets/images/profile-image/folder and edit the file name
 profile_image: /assets/images/profile-image/profile_picture_cropped_med.jpeg
 
-
 # Link your resume
 # You can place your resume in assets/resume/{resume file.pdf} or add external link such as pdf saved in google drive 
 resume-url: assets/resume/londono_blase_resume.pdf
 
-
 # Set up external links - this will show up as small icons next to your name.
-
 external-links:    # input only your own url slug. The icons with missing entries will not appear.
   linkedin: blase-londono    # https://www.linkedin.com/in/{your url slug} 
   github: blasejlondono    # https://github.com/{your url slug} 
@@ -39,7 +36,6 @@ external-links:    # input only your own url slug. The icons with missing entrie
   discord:            # https://discord.com/users/{your url slug} 
   bluesky:           # https://bsky.app/profile/{your url slug} 
   
-
 # Skills Section - Add the list of your Skills by categories/tools. The indentation for each level needs to be precise. 
 skills:
   - category: 3D Modeling
@@ -58,11 +54,8 @@ skills:
     tools:
     - Altium Designer
 
-
 # Contact Form Setup. Setup an account and copy over the key. When someone fills out the form, it will be received in your email.
 formspree-key:   https://formspree.io/f/{8-digit key}
-
-
 
 # Active theme (Updatethis to switch themes). Make sure to keep the indentation the samne.
 colors: # this is the basic theme
@@ -106,19 +99,12 @@ lemon theme:
   background: "#fff8f8"
   light_background: "#fff5f6"
 
-
-
-
-
-
 #########################################################################################################
 # Build settings for the site. Editing the below may cause the site to malfunction.
-
 collections:
   projects:
     output: true
     permalink: /projects/:path/
-
 
 markdown: kramdown
 highlighter: rouge
@@ -138,7 +124,6 @@ plugins:
 
 include:
   - _projects
-
 
 # Exclude from processing.
 # The following items will not be processed, by default.
