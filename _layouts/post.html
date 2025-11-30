@@ -27,6 +27,14 @@ layout: wrapper
             </div>
         </div>
     </div>
+
+    <div class="project-description">
+        <h2>Project Overview</h2>
+        <p>{{ page.description }}</p>
+        {% if page.paper %}
+        <a href="{{ page.paper }}" target="_blank" class="paper-link">View Analysis Paper (PDF)</a>
+        {% endif %}
+    </div>
       
     <div class="content">
         {{content}}
