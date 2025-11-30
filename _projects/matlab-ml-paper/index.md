@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MATLAB Pirouette Recognition Project
-description:  Developed LSTM model in MATLAB to classify dancer movements using IMU time-series data. Trained on acceleration and gyroscope data, achieving >85% classification accuracy. Simulated movement recognition and documented results for analysis pape
+description: I developed a custom LSTM neural network using the MATLAB Deep Learning Toolbox to recognize and classify pirouette movements from a (small) IMU sensor dataset. The model achieved over 85% accuracy in identifying dance movements from the aforementioned time-series inputs. I simulated the recognition system using a custom MATLAB GUI and documented the full methodology and results in an analysis paper (linked below).
 skills: 
 - MATLAB
 main-image: /pirouette.jpg
