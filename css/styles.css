@@ -605,6 +605,44 @@ footer p {
     margin-bottom: 10px;
 }
 
+.paper-link-container {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.paper-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--light-background-color);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.paper-link:hover {
+    background-color: var(--link-color);
+    color: white;
+    border-color: var(--link-color);
+    transform: translateY(-2px);
+}
+
+.paper-icon {
+    font-size: 1.2rem;
+}
+
+.post-view .summary .skills-card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+
 .post-view .summary .skills-card {
     display: flex;
     flex-direction: column;
