@@ -11,5 +11,5 @@ skills:
 - 3D Printing
 - Shop Tools
 
-main-image: \monkey.PNG
+main-image: \banana.PNG
 ---
