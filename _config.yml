@@ -1,6 +1,9 @@
 # Main Page Setup
 title: Blase Londoño's Portfolio # This is what shows up in the tab of the browser
 
+
+
+
 # Hero Section
 name: Blase Londoño
 headline: Mechanical Engineering Undergraduate Student at UC San Diego
@@ -8,11 +11,20 @@ description: | # dont remove this line. this will ignore all new lines until the
   I'm drawn to engineering for the fast-paced problem-solving and the opportunity to work with talented people on challenging technical projects. Whether I'm designing power distribution systems for Mars rovers, prototyping airless tire systems, or teaching MATLAB to 35+ students, I enjoy building systems that work and collaborating with teams that push the boundaries of what's possible. <br><br>
   I'm currently involved with UCSD Yonder Dynamics, IEEE-HKN, Tau Beta Pi, Apple's Next-Gen Innovators program, and undergraduate research in semiconductor characterization. As I continue through my degree, I'm focused on finding the right area within robotics to commit to long-term and make a meaningful impact. <br><br>
 
+
+
+
 # Profile image 
 profile_image: /assets/images/profile-image/profile_picture.jpg
 
+
+
+
 # Link resume
 resume-url: /assets/resume/londono_blase_resume.pdf
+
+
+
 
 # Set up external links
 external-links:    # input only url slug.
@@ -26,9 +38,15 @@ external-links:    # input only url slug.
   youtube:                   # https://youtube.com/@{your url slug} 
   discord:                   # https://discord.com/users/{your url slug} 
   bluesky:                   # https://bsky.app/profile/{your url slug} 
-  
+
+
+
+
 # Formspree
 formspree-key:   https://formspree.io/f/{mjkngqoz}
+
+
+
 
 # Skills Section
 skills:
@@ -66,6 +84,9 @@ skills:
     tools:
     - Canva
     - LaTeX
+
+
+
 
 # Active theme 
 colors: # this is the basic theme
@@ -108,6 +129,9 @@ lemon theme:
   highlight: "#ff4d6d"
   background: "#fff8f8"
   light_background: "#fff5f6"
+
+
+
 
 #########################################################################################################
 # Build settings for the site. Editing the below may cause the site to malfunction.
