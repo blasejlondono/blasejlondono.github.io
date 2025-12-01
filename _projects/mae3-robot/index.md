@@ -12,6 +12,6 @@ skills:
 - Shop Tools
 - FOS Analysis
 
-main-image: \monkey.png
+main-image: \robot.PNG
 ---
 
