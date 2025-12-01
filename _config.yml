@@ -27,6 +27,9 @@ external-links:    # input only url slug.
   discord:                   # https://discord.com/users/{your url slug} 
   bluesky:                   # https://bsky.app/profile/{your url slug} 
   
+# Formspree
+formspree-key:   https://formspree.io/f/{mjkngqoz}
+
 # Skills Section
 skills:
   - category: CAD & Modeling
