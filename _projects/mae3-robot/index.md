@@ -12,6 +12,6 @@ skills:
 - Shop Tools
 - FOS Analysis
 
-main-image: \robot.PNG
+main-image: \cad-31.jpg
 ---
 
