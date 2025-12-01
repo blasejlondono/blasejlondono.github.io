@@ -11,5 +11,5 @@ skills:
 - 3D Printing
 - Shop Tools
 
-main-image: \monkey.png
+main-image: \robot.PNG
 ---
