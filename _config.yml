@@ -55,14 +55,21 @@ skills:
     - 3D Printing
     - Laser Cutting
     - CNC Machining
-    - Soldering
-    - Breadboarding
+    - Hand Sketching
+    - Drilling
+    - Tapping
+    - Reaming
+    - Press Fitting
     
   - category: Electronics & PCB Design
     tools:
     - Altium Designer
     - Arduino
-    - Circuit Design
+    - Linear Circuit Design
+    - Soldering
+    - Crimping
+    - Splicing
+    - Breadboarding
     
   - category: Programming
     tools:
