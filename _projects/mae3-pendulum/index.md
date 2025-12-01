@@ -10,7 +10,6 @@ skills:
 - LaserCamm Lasercutting
 - 3D Printing
 - Shop Tools
-- Physics Analysis
 
 main-image: \monkey.png
 ---
