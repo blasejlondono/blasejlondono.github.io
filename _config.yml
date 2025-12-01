@@ -42,12 +42,6 @@ external-links:    # input only url slug.
 
 
 
-# Formspree
-formspree-key:   https://formspree.io/f/{mjkngqoz}
-
-
-
-
 # Skills Section
 skills:
   - category: CAD & Modeling
