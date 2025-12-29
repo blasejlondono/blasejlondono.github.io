@@ -8,5 +8,5 @@ paper: /projects/matlab-ml-paper/londono_blase_dlpaper.pdf
 skills: 
 - MATLAB
 
-main-image: /training.png
+main-image: /training-31.jpg
 ---
