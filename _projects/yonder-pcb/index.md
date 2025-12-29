@@ -6,5 +6,5 @@ description: I reengineered our 2025 rover's power distribution PCB to handle a 
 skills: 
 - Altium Designer
 
-main-image: /swag-31.jpg
+main-image: /board-31.jpg
 ---
