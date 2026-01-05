@@ -10,6 +10,8 @@ skills:
 - LaserCamm Lasercutting
 - 3D Printing
 - Shop Tools
+- Fusion360
+- AutoCAD
 
 main-image: \monkey-31.jpg
 ---

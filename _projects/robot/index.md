@@ -10,7 +10,8 @@ skills:
 - 3D Printing
 - Soldering
 - Shop Tools
-- FOS Analysis
+- Fusion360
+- AutoCAD
 
 main-image: \cad-31.jpg
 ---
