@@ -47,7 +47,7 @@ skills:
   - category: CAD & Modeling
     tools:
     - OnShape
-    - Autodesk Fusion 360
+    - Autodesk Fusion360
     - Autodesk AutoCAD
     
   - category: Prototyping & Fabrication
@@ -70,6 +70,7 @@ skills:
     - Crimping
     - Splicing
     - Breadboarding
+    - Protoboarding
     
   - category: Programming
     tools:
@@ -85,6 +86,8 @@ skills:
     tools:
     - Canva
     - LaTeX
+    - GIMP
+    - InkScape
 
 
 
