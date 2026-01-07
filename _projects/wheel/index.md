@@ -8,5 +8,5 @@ skills:
 - Python
 - OnShape
 
-main-image: /wheel-31.jpg
+main-image: /wheel.jpg
 ---
