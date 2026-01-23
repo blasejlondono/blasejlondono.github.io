@@ -44,53 +44,25 @@ external-links:    # input only url slug.
 
 # Skills Section
 skills:
-  - category: CAD & Modeling
+  - category: Manufacturing
     tools:
-    - OnShape
-    - Autodesk Fusion360
-    - Autodesk AutoCAD
-    
-  - category: Prototyping & Fabrication
-    tools:
-    - 3D Printing
-    - Laser Cutting
     - CNC Machining
-    - Hand Sketching
-    - Drilling
-    - Tapping
-    - Reaming
-    - Press Fitting
-    
-  - category: Electronics & PCB Design
-    tools:
-    - Altium Designer
-    - Arduino
-    - Linear Circuit Design
+    - Manual Milling 
+    - Wood Lathing 
+    - Laser Cutting
+    - 3D Printing
+    - Composite Materials
     - Soldering
-    - Crimping
-    - Splicing
-    - Breadboarding
-    - Protoboarding
+    - Sheet Metal Manufacturing
     
-  - category: Programming
+  - category: Software
     tools:
-    - MATLAB
+    - Autodesk Fusion 360
+    - AutoCAD
+    - Onshape
+    - Altium Designer
     - Python
-    - Java
-    - Arduino C
-    - HTML
-    - CSS
-    - Git
-    
-  - category: Visual Design
-    tools:
-    - Canva
-    - LaTeX
-    - GIMP
-    - InkScape
-
-
-
+    - MATLAB
 
 # Active theme 
 colors: # this is the basic theme
