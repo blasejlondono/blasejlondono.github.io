@@ -13,6 +13,6 @@ skills:
 - Fusion360
 - AutoCAD
 
-main-image: \cad-31.jpg
+main-image: \arm.jpg
 ---
 
