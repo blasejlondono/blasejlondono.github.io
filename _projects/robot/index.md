@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Mechanical Design Robot
-description: As a member of a four-student team, I designed and fabricated a 4-DOF robotic manipulator mimicking spherical coordinates (θ, φ, ρ) for an autonomous ring retrieval competition. Engineered a dual-stage extension system featuring a primary rack-and-pinion mechanism and secondary motor-driven extension, performing quasi-static force analysis and deriving closed-form equations for extension velocity under loaded conditions. Conducted experimental validation achieving 2.3 in/s extension speed with 63% safety factor relative to theoretical predictions, accounting for friction losses, power transmission inefficiencies, and motor startup dynamics. Demonstrated proficiency in mechanism design, free-body diagram analysis, CAD modeling, experimental testing, and collaborative engineering problem-solving under tight deadlines.
+description: As the leading member of a four-student team, I designed and fabricated a ring-collecting robot with 28" vertical extension. My focus was on our rack-and-pinion mechanism, which I made usinglaser-cut acrylic walls and gears, 3D printed shafts (material budget), a bent sheetmetal base and drill-pressed tap and clearance holes. Developed complete CAD model in Fusion 360, with joints and dependencies, to simulate loading conditions and size in playing field.
 
 paper: /projects/robot/londono_blase_robot.pdf
 
 skills: 
-- LaserCamm Lasercutting
+- Laser cutting
 - 3D Printing
 - Soldering
 - Shop Tools
