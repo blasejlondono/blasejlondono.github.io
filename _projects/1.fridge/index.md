@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Thermoacoustic Refrigerator
-description: (IN PROGRESS) Managing a small team of 3 undergraduate engineering students, building a thermoacoustic refrigerator on a $500 budget provided by IEEE-HKN, advised by Professor Prabhakar Bandaru and Christopher Fitzhugh, an Apple Product Design Engineer.
+description: (IN PROGRESS) Managing a small team of 3 undergraduate engineering students, building a thermoacoustic refrigerator on a $500 budget provided by IEEE-HKN. Advised by Professor Prabhakar Bandaru and Apple Product Design Engineer Christopher Fitzhugh.
 skills: 
 - ANSYS Fluent
 - Onshape
