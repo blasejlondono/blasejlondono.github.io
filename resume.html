@@ -68,22 +68,11 @@
     <div id="content">
 
       <h2>R&eacute;sum&eacute;</h2>
-      <p class="deck">One page. The PDF is below, and the same thing in plain
-      text underneath it.</p>
+      <p class="deck">One page. Read it here, or take the PDF.</p>
 
       <ul class="files">
         <li><a href="files/londono_blase_resume.pdf">Download r&eacute;sum&eacute; (PDF)</a></li>
       </ul>
-
-      <div class="pdfbox">
-        <object data="files/londono_blase_resume.pdf#view=FitH" type="application/pdf">
-          <div class="pdf-fallback">
-            <p>Your browser will not display the PDF inline.
-            <a href="files/londono_blase_resume.pdf">Open it in a new tab</a>,
-            or read the text version below.</p>
-          </div>
-        </object>
-      </div>
 
       <hr>
 
@@ -106,37 +95,29 @@
       <p><strong>Mechanical Engineering Intern</strong> &mdash; Odin Dynamics, Inc.
       <br><span class="cap">September 2026 &ndash; present</span></p>
       <ul class="files">
-        <li>Designing a UUV communications mast: antenna and RF mechanical
-            integration, drag reduction, wake effects on the thruster.</li>
-        <li>Owning full-vehicle wire harnessing &mdash; bulkhead integration,
-            strain relief, connector selection, sealing and tolerancing.</li>
+        <li>Owning full-vehicle wire harnessing: hand-specified 70+ harness
+            drawings in Siemens NX from component STEP and instrument ICDs, plus
+            material procurement, service loops, RFQs, technical calls with
+            suppliers and outsourced fabrication.</li>
+        <li>Owning the full RF communication mast, mechanical design through
+            integration: hand drag calculations, Siemens NX assemblies, CFD for
+            drag reduction and wake effects on the thruster.</li>
+        <li>Built test rigs and ran DAQ for sonar, DVL and INS/GPS field testing;
+            assisted with nickel fuse-foil blowout testing on custom battery
+            packs.</li>
       </ul>
 
-      <p><strong>Mechanical Engineer</strong> &mdash; UCSD Yonder Dynamics
-      <br><span class="cap">October 2025 &ndash; present</span></p>
-      <ul class="files">
-        <li>Designed and manufactured carbon fiber wheel hubs for the Mars
-            rover&rsquo;s pneumatic wheels: Onshape modelling, wood-lathed mould,
-            three-ply vacuum-bag wet layup, CNC post-processing.
-            <a href="projects/carbon-fiber-wheel-hubs.html">Reduced hub weight by
-            50%</a>.</li>
-        <li>Designed and manufactured a TPU fin-ray compliant gripper for the
-            rover manipulator: FDM-printed ASA housing, heat-set inserts,
-            rubber-laminated contact surface.
-            <a href="projects/rover-fin-ray-end-effector.html">Fielded on the 2026
-            competition rover</a>.</li>
-      </ul>
-
-      <p><strong>Mechanical Engineering Intern</strong> &mdash; NASA Ames Research Center
+      <p><strong>Mechanical Engineering Intern</strong> &mdash; NASA Ames Research Center, NFAC
       <br><span class="cap">June 2026 &ndash; August 2026</span></p>
       <ul class="files">
         <li>Designed instrumentation mounting hardware and wire routing in
             SOLIDWORKS for full-scale aerodynamic testing; produced DFM and GD&amp;T
             drawings approved by aircraft mechanics and released for outside
             fabrication.</li>
-        <li>Diagnosed a signal-clipping issue on Pacific Instruments strain gauge
-            boards and designed a low-cost KiCad adaptor PCB to correct the signal
-            reference, recovering two channels per board.
+        <li>Diagnosed signal clipping on Pacific Instruments strain gauge boards
+            and designed a low-cost KiCad adaptor PCB to correct the signal
+            reference, recovering two channels per board, scaled across several
+            hundred facility DAS boards.
             <a href="projects/nfac-transducer-adaptor-pcb.html">More on that
             board</a>.</li>
         <li>Rapid-prototyped a modular vane set redesign in SOLIDWORKS for
@@ -144,14 +125,22 @@
             steel-reinforced to withstand 150&nbsp;kt airflow.</li>
       </ul>
 
-      <p><strong>Electrical Engineer</strong> &mdash; UCSD Yonder Dynamics
-      <br><span class="cap">October 2024 &ndash; October 2025</span></p>
+      <p><strong>Electromechanical Engineer</strong> &mdash; UCSD Yonder Dynamics
+      <br><span class="cap">October 2024 &ndash; present</span></p>
       <ul class="files">
-        <li>Designed a 24&nbsp;V / 60&nbsp;A rover power distribution PCB in Altium
-            Designer: current-scaled trace widths, polygon pours for thermal
-            management, per-fuse blowout indicator LEDs.
-            <a href="projects/rover-power-distribution-pcb.html">Reduced footprint
-            by 20%</a>.</li>
+        <li>Designed and built carbon fiber Mars rover wheel hubs: wood-lathed
+            mould, three-ply vacuum-bag wet layup, CNC post-processing.
+            <a href="projects/carbon-fiber-wheel-hubs.html">Cut hub mass by
+            50%</a> on a rover sitting within 2&nbsp;kg of the 50&nbsp;kg
+            competition limit.</li>
+        <li>Designed a TPU fin-ray compliant gripper for the rover manipulator:
+            FDM-printed ASA housing, heat-set inserts, rubber-laminated contact
+            surface. <a href="projects/rover-fin-ray-end-effector.html">Fielded on
+            the 2026 competition rover</a>.</li>
+        <li>Designed a 24&nbsp;V / 60&nbsp;A power distribution PCB in Altium:
+            current-scaled traces, thermal pours, fuse LEDs.
+            <a href="projects/rover-power-distribution-pcb.html">20%
+            smaller</a>.</li>
       </ul>
 
       <h3>Research</h3>
@@ -162,23 +151,14 @@
         <li>Implemented a CAN bus network on a Raspberry Pi to increase
             closed-loop control bandwidth for a five-bar legged robot testbed;
             soldered and configured ODrive v3.6 controllers with Quantum MT5208
-            motors and absolute encoder feedback.
+            motors and encoders.
             <a href="projects/motor-control-architecture.html">Write-up</a>.</li>
         <li>Diagnosed driver conflicts and specified an ODrive S1 / CAN HAT
-            upgrade to prevent future bottlenecks; rebuilt the local software
-            environment to restore testbed capability.</li>
+            upgrade to prevent future bandwidth bottlenecks.</li>
       </ul>
 
       <h3>Selected projects</h3>
       <table class="spec">
-        <tr>
-          <th>Feb &ndash; May 2026</th>
-          <td><a href="projects/thermoacoustic-refrigerator.html"><strong>Thermoacoustic
-              Refrigerator</strong></a> &mdash; acoustic pressure heat pump, built as
-              project lead. Modelled acoustic pressure in ANSYS Fluent to find the
-              resonator&rsquo;s natural frequency for heat stack staging. Achieved a
-              4&deg;C temperature drop.</td>
-        </tr>
         <tr>
           <th>Mar &ndash; May 2026</th>
           <td><a href="projects/machined-kinematic-cannon.html"><strong>Machining
@@ -188,20 +168,28 @@
               manual-lathed firing pin. Held &plusmn;0.003&Prime; across all mating
               features.</td>
         </tr>
+        <tr>
+          <th>Feb &ndash; May 2026</th>
+          <td><a href="projects/thermoacoustic-refrigerator.html"><strong>Thermoacoustic
+              Refrigerator</strong></a> &mdash; acoustic pressure heat pump, built as
+              project lead. Modelled acoustic pressure in ANSYS Fluent to find the
+              resonator&rsquo;s natural frequency for heat stack staging. Achieved a
+              4&deg;C temperature drop.</td>
+        </tr>
       </table>
 
       <h3>Skills</h3>
       <table class="spec">
         <tr>
           <th>Hardware</th>
-          <td>CAN bus, composite layup, CNC machining and programming, DFM,
-              embedded systems, GD&amp;T, laser cutting, manual mill and lathe,
-              Raspberry Pi, soldering, 3D printing.</td>
+          <td>Wire harness design, test fixtures and DAQ, composite layup, CNC
+              and manual machining, DFM, GD&amp;T, embedded systems, soldering,
+              3D printing, laser cutting.</td>
         </tr>
         <tr>
           <th>Software</th>
-          <td>Altium Designer, ANSYS Fluent, Fusion 360, KiCad, MATLAB,
-              ODrivetool, Onshape, Python, SOLIDWORKS.</td>
+          <td>Siemens NX, SOLIDWORKS, Onshape, Fusion 360, ANSYS Fluent, Altium
+              Designer, KiCad, MATLAB, Python.</td>
         </tr>
       </table>
 

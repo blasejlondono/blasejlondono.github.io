@@ -236,11 +236,6 @@ table.spec th {
 ul.files li { margin-bottom: 5px; font-size: 11.5px; }
 ul.files li:before { content: "\25b8\00a0"; color: var(--ink-soft); }
 
-/* ---------- resume embed ------------------------------------ */
-.pdfbox { border: 1px solid var(--rule); background: #fff; margin: 14px 0; }
-.pdfbox object, .pdfbox iframe { display: block; width: 100%; height: 980px; border: 0; }
-.pdf-fallback { padding: 22px; font-size: 12px; }
-
 /* ---------- footer ------------------------------------------ */
 #footer {
   clear: both;
@@ -302,5 +297,4 @@ ul.files li:before { content: "\25b8\00a0"; color: var(--ink-soft); }
   .plist .thumb { margin-bottom: 9px; }
   .plist .thumb img { width: 100%; height: 130px; }
   table.spec th { width: auto; }
-  .pdfbox object, .pdfbox iframe { height: 560px; }
 }
