@@ -38,7 +38,7 @@ body {
 }
 
 #page {
-  max-width: 900px;
+  max-width: 980px;
   margin: 0 auto;
   background: var(--paper);
   border: 1px solid var(--rule);
@@ -62,7 +62,11 @@ body {
   letter-spacing: 0.9px;
   text-transform: uppercase;
   color: var(--ink-soft);
+  max-width: none;   /* opt out of the 66ch measure set on p */
 }
+/* keep each phrase whole -- if the tagline has to wrap, it breaks at a
+   middot, never inside "Controls, Robotics & Mechatronics" */
+#masthead .tagline .nb { white-space: nowrap; }
 
 /* ---------- compact nav, narrow screens only ---------------
    On a phone the sidebar moves below the content, so this bar
