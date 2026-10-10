@@ -48,7 +48,9 @@ body {
 #masthead {
   background: var(--panel);
   border-bottom: 3px double var(--bar);
-  padding: 16px 20px 13px;
+  /* bottom padding carries the 18px the tagline's second line used to
+     occupy, so the masthead keeps its height with the tagline inline */
+  padding: 16px 20px 31px;
 }
 #masthead h1 {
   font: normal 27px/1.1 Georgia, "Times New Roman", Times, serif;
@@ -62,6 +64,7 @@ body {
   letter-spacing: 0.9px;
   text-transform: uppercase;
   color: var(--ink-soft);
+  max-width: none;   /* opt out of the 66ch measure set on p */
 }
 /* The tagline keeps the 66ch measure set on p, so it sits on two lines
    and the masthead holds its original proportions. The spans just stop
@@ -258,6 +261,9 @@ ul.files li:before { content: "\25b8\00a0"; color: var(--ink-soft); }
 @media (max-width: 720px) {
   body    { padding: 0; }
   #page   { border: 0; }
+  /* narrow enough that the tagline wraps on its own -- it does not need
+     the extra bottom padding that keeps the desktop masthead its height */
+  #masthead { padding-bottom: 13px; }
 
   #topnav {
     display: flex;
