@@ -157,9 +157,9 @@ hr {
 /* ---------- intro block (home page) ------------------------ */
 #intro { display: flex; gap: 20px; align-items: flex-start; }
 #intro .copy { flex: 1 1 auto; min-width: 0; }
-#intro .mug  { flex: 0 0 136px; }
+#intro .mug  { flex: 0 0 190px; }
 #intro .mug img {
-  width: 136px;
+  width: 190px;
   height: auto;
   display: block;
   border: 1px solid var(--rule);
@@ -167,6 +167,11 @@ hr {
   background: #fff;
 }
 #intro .mug .cap { margin-top: 5px; }
+
+/* ---------- two photos abreast --------------------------- */
+.photorow { display: flex; gap: 14px; margin: 10px 0 4px; }
+.photorow figure { flex: 1 1 0; min-width: 0; margin: 0; }
+.photorow img { width: 100%; height: 195px; object-fit: cover; }
 
 .cap { font-size: 10.5px; color: var(--ink-soft); line-height: 1.45; }
 
@@ -290,6 +295,9 @@ ul.files li:before { content: "\25b8\00a0"; color: var(--ink-soft); }
   #content { padding: 17px 15px 24px; }
   #intro   { display: block; }
   #intro .mug { margin: 0 0 14px; }
+  .photorow { display: block; }
+  .photorow figure + figure { margin-top: 13px; }
+  .photorow img { height: 210px; }
   .plist li { display: block; }
   .plist .thumb { margin-bottom: 9px; }
   .plist .thumb img { width: 100%; height: 130px; }
