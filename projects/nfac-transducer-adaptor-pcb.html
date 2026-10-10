@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NFAC Transducer Adaptor PCB &mdash; Blase Londo&ntilde;o</title>
+<meta name="description" content="A low-cost KiCad adaptor board that corrects a signal-clipping condition on Pacific Instruments strain gauge amplifiers in the NASA Ames NFAC data acquisition system.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div id="page">
+
+  <div id="masthead">
+    <h1><a href="../index.html">Blase Londo&ntilde;o</a></h1>
+    <p class="tagline">Mechanical Engineering &middot; UC San Diego &rsquo;27 &middot; Controls, Robotics &amp; Mechatronics</p>
+  </div>
+
+  <ul id="topnav">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../projects.html">Projects</a></li>
+    <li><a href="../resume.html">R&eacute;sum&eacute;</a></li>
+  </ul>
+
+  <div id="shell">
+
+    <!-- ========================= sidebar ========================= -->
+    <div id="sidebar">
+
+      <div class="box">
+        <div class="box-hd">Navigation</div>
+        <ul class="nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../resume.html">R&eacute;sum&eacute;</a></li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <div class="box-hd">Projects</div>
+        <ul class="nav sub">
+          <li><a class="here" href="nfac-transducer-adaptor-pcb.html">NFAC Transducer Adaptor PCB</a></li>
+          <li><a href="machined-kinematic-cannon.html">Machined Kinematic Cannon</a></li>
+          <li><a href="motor-control-architecture.html">Motor Control Architecture</a></li>
+          <li><a href="rover-fin-ray-end-effector.html">Rover Fin-Ray End Effector</a></li>
+          <li><a href="thermoacoustic-refrigerator.html">Thermoacoustic Refrigerator</a></li>
+          <li><a href="carbon-fiber-wheel-hubs.html">Carbon Fiber Wheel Hubs</a></li>
+          <li><a href="rover-power-distribution-pcb.html">Rover Power Distribution PCB</a></li>
+          <li><a href="pirouette-recognition-lstm.html">Pirouette Recognition LSTM</a></li>
+          <li><a href="mae3-robotic-arm.html">MAE3 Robotic Arm</a></li>
+          <li><a href="mae3-pendulum-clock.html">MAE3 Pendulum Clock</a></li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <div class="box-hd">Contact</div>
+        <div class="box-bd">
+          <p><a href="mailto:blasejlondono@hotmail.com">blasejlondono<br>@hotmail.com</a></p>
+          <p><a href="https://www.linkedin.com/in/blase-londono">LinkedIn</a><br>
+             <a href="https://github.com/blasejlondono">GitHub</a></p>
+        </div>
+      </div>
+
+    </div>
+    <!-- ======================= end sidebar ======================= -->
+
+    <div id="content">
+
+      <h2>NFAC Transducer Adaptor PCB</h2>
+      <p class="deck">A low-cost adaptor board for a NASA wind tunnel data
+      acquisition system.</p>
+
+      <table class="spec">
+        <tr><th>Where</th><td>National Full-Scale Aerodynamics Complex, NASA Ames Research Center</td></tr>
+        <tr><th>When</th><td>Summer 2026</td></tr>
+        <tr><th>Tools</th><td>KiCad, hand-built footprints and 3D models</td></tr>
+        <tr><th>Outcome</th><td>Roughly two channels recovered per amplifier board, against several hundred boards across the facility DAQ</td></tr>
+      </table>
+
+      <!-- swap in the real photograph when it is to hand -->
+      <figure>
+        <img src="../img/placeholder.svg" alt="The adaptor board in final assembly">
+        <figcaption>Final assembly, before scaling the design onto the 40&times;80
+        data acquisition system.</figcaption>
+      </figure>
+
+      <p>NFAC&rsquo;s data acquisition system routes strain gauge signals through
+      Pacific Instruments amplifier boards, which only work when the excitation
+      common sits within a 10&nbsp;V window of both signal legs. A transducer
+      grounded off facility common violates that condition and clips the output.
+      Replacing the amplifiers was not realistic &mdash; they are decades old and
+      hard to source &mdash; so the facility team asked me to design an adaptor
+      that would fix the clipping instead.</p>
+
+      <p>I found the problem documented in a six-year-old facility worknote and
+      used it to design a small board in KiCad that ties the excitation common to
+      the negative signal leg, satisfying the 10&nbsp;V condition trivially. The
+      work happened on airgapped machines with no internet access, so every
+      footprint and 3D model was built by hand from datasheets and drawings.</p>
+
+      <p>Each adaptor recovers roughly two channels per amplifier board, and there
+      are several hundred boards across the facility DAQ. As of writing they have
+      not shipped in quantity, so the real validation is still ahead of me.</p>
+
+      <hr>
+      <p><a href="../projects.html">&laquo; Back to projects</a></p>
+
+    </div>
+  </div>
+
+  <div id="footer">
+    <span>&copy; 2026 Blase Londo&ntilde;o &middot; <a href="mailto:blasejlondono@hotmail.com">blasejlondono@hotmail.com</a></span>
+    <span>Hand-written HTML &amp; CSS. No frameworks, no JavaScript.</span>
+  </div>
+
+</div>
+
+</body>
+</html>

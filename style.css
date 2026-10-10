@@ -1,0 +1,298 @@
+/* ============================================================
+   blaselondono.com
+   hand-written stylesheet. no frameworks, no build step.
+   last touched: october 2026
+   ============================================================ */
+
+/* ---------- palette ------------------------------------- */
+:root {
+  --ink:        #1e1b16;   /* body text                      */
+  --ink-soft:   #5a5346;   /* captions, meta                 */
+  --paper:      #faf8f1;   /* content background             */
+  --panel:      #efebdf;   /* boxes, table headers           */
+  --desk:       #c6c0b0;   /* outside the page               */
+  --rule:       #8a8371;   /* hard borders                   */
+  --rule-soft:  #cbc4b0;   /* dotted separators              */
+  --bar:        #37332a;   /* box headers, masthead rule     */
+  --link:       #0b3fa8;
+  --visited:    #5c2d8c;
+  --hilite:     #fdfbd4;   /* link hover                     */
+}
+
+/* ---------- reset (the 2003 kind) ------------------------ */
+* { box-sizing: border-box; }
+html, body, h1, h2, h3, h4, p, ul, ol, li, dl, dt, dd, figure, table {
+  margin: 0;
+  padding: 0;
+}
+ul, ol { list-style: none; }
+img { border: 0; }
+
+/* ---------- the page ------------------------------------- */
+body {
+  background: var(--desk);
+  color: var(--ink);
+  font: 12.5px/1.65 Verdana, Geneva, "DejaVu Sans", sans-serif;
+  padding: 22px 16px 40px;
+  -webkit-text-size-adjust: 100%;
+}
+
+#page {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+}
+
+/* ---------- masthead -------------------------------------- */
+#masthead {
+  background: var(--panel);
+  border-bottom: 3px double var(--bar);
+  padding: 16px 20px 13px;
+}
+#masthead h1 {
+  font: normal 27px/1.1 Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 0.4px;
+}
+#masthead h1 a { color: var(--ink); text-decoration: none; }
+#masthead h1 a:hover { background: none; text-decoration: underline; }
+#masthead .tagline {
+  margin-top: 5px;
+  font-size: 11px;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+/* ---------- compact nav, narrow screens only ---------------
+   On a phone the sidebar moves below the content, so this bar
+   carries the three top-level links. Hidden on desktop.        */
+#topnav { display: none; }
+
+/* ---------- two-column body ------------------------------- */
+#shell { display: flex; align-items: stretch; }
+
+#sidebar {
+  flex: 0 0 186px;
+  background: var(--panel);
+  border-right: 1px solid var(--rule);
+  padding: 16px 13px 22px;
+}
+
+#content {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 20px 26px 30px;
+}
+
+/* ---------- sidebar boxes --------------------------------- */
+.box { border: 1px solid var(--rule); background: var(--paper); margin-bottom: 15px; }
+.box-hd {
+  background: var(--bar);
+  color: #f3f0e6;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  padding: 4px 8px 3px;
+}
+.box-bd { padding: 8px; font-size: 11px; color: var(--ink-soft); line-height: 1.6; }
+.box-bd p + p { margin-top: 7px; }
+
+.nav li { border-bottom: 1px dotted var(--rule-soft); }
+.nav li:last-child { border-bottom: 0; }
+.nav a {
+  display: block;
+  padding: 5px 8px;
+  font-size: 11.5px;
+  text-decoration: none;
+  color: var(--link);
+}
+.nav a:visited { color: var(--link); }      /* nav shouldn't go purple */
+.nav a:hover   { background: var(--hilite); text-decoration: underline; }
+.nav a.here {
+  background: #e2ddcc;
+  color: var(--ink);
+  font-weight: bold;
+  cursor: default;
+}
+.nav a.here:before { content: "\00bb\00a0"; }
+.nav .sub a { padding-left: 15px; font-size: 11px; }
+
+/* ---------- links ----------------------------------------- */
+a         { color: var(--link); }
+a:visited { color: var(--visited); }
+a:hover   { background: var(--hilite); }
+
+/* ---------- headings & text ------------------------------- */
+h2 {
+  font: normal 20px/1.25 Georgia, "Times New Roman", Times, serif;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 4px;
+  margin-bottom: 4px;
+}
+h3 {
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 22px 0 7px;
+}
+.deck {
+  font: italic 14px/1.5 Georgia, "Times New Roman", Times, serif;
+  color: var(--ink-soft);
+  margin-bottom: 16px;
+}
+p { margin-bottom: 12px; max-width: 66ch; }
+p:last-child { margin-bottom: 0; }
+strong { font-weight: bold; }
+
+hr {
+  border: 0;
+  border-top: 1px dotted var(--rule-soft);
+  margin: 20px 0;
+}
+
+/* ---------- intro block (home page) ------------------------ */
+#intro { display: flex; gap: 20px; align-items: flex-start; }
+#intro .copy { flex: 1 1 auto; min-width: 0; }
+#intro .mug  { flex: 0 0 136px; }
+#intro .mug img {
+  width: 136px;
+  height: auto;
+  display: block;
+  border: 1px solid var(--rule);
+  padding: 3px;
+  background: #fff;
+}
+#intro .mug .cap { margin-top: 5px; }
+
+.cap { font-size: 10.5px; color: var(--ink-soft); line-height: 1.45; }
+
+/* ---------- project list ----------------------------------- */
+.plist { margin-top: 6px; }
+.plist li {
+  display: flex;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px dotted var(--rule-soft);
+}
+.plist li:first-child { padding-top: 8px; }
+.plist li:last-child  { border-bottom: 0; }
+/* the renders are letterboxed on white, so contain rather than crop */
+.plist .thumb { flex: 0 0 132px; }
+.plist .thumb img {
+  width: 132px;
+  height: 99px;
+  object-fit: contain;
+  display: block;
+  border: 1px solid var(--rule);
+  background: #fff;
+}
+.plist .meat { flex: 1 1 auto; min-width: 0; }
+.plist .meat h4 { font: bold 13px/1.4 Verdana, Geneva, sans-serif; margin-bottom: 3px; }
+.plist .meat p  { font-size: 11.5px; margin-bottom: 5px; max-width: none; color: var(--ink-soft); }
+.tags { font-size: 10px; letter-spacing: 0.5px; color: var(--ink-soft); text-transform: uppercase; }
+
+/* ---------- figures ---------------------------------------- */
+figure { margin: 16px 0; }
+figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--rule);
+  padding: 3px;
+  background: #fff;
+}
+figcaption { margin-top: 5px; font-size: 10.5px; color: var(--ink-soft); }
+
+/* ---------- spec table -------------------------------------- */
+table.spec {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 4px 0 18px;
+  font-size: 11.5px;
+}
+table.spec th, table.spec td {
+  border: 1px solid var(--rule);
+  padding: 5px 9px;
+  text-align: left;
+  vertical-align: top;
+}
+table.spec th {
+  background: var(--panel);
+  width: 118px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* ---------- file links -------------------------------------- */
+ul.files li { margin-bottom: 5px; font-size: 11.5px; }
+ul.files li:before { content: "\25b8\00a0"; color: var(--ink-soft); }
+
+/* ---------- resume embed ------------------------------------ */
+.pdfbox { border: 1px solid var(--rule); background: #fff; margin: 14px 0; }
+.pdfbox object, .pdfbox iframe { display: block; width: 100%; height: 980px; border: 0; }
+.pdf-fallback { padding: 22px; font-size: 12px; }
+
+/* ---------- footer ------------------------------------------ */
+#footer {
+  clear: both;
+  border-top: 1px solid var(--rule);
+  background: var(--panel);
+  padding: 9px 20px;
+  font-size: 10.5px;
+  color: var(--ink-soft);
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ---------- small screens ----------------------------------- */
+@media (max-width: 720px) {
+  body    { padding: 0; }
+  #page   { border: 0; }
+
+  #topnav {
+    display: flex;
+    background: var(--bar);
+    border-bottom: 1px solid var(--rule);
+  }
+  #topnav li {
+    flex: 1 1 0;
+    text-align: center;
+    border-right: 1px solid #585243;
+  }
+  #topnav li:last-child { border-right: 0; }
+  #topnav a {
+    display: block;
+    padding: 10px 4px;
+    color: #f3f0e6;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  #topnav a:visited { color: #f3f0e6; }
+  #topnav a:hover   { background: #4b4538; }
+
+  /* content first, the long sidebar after it */
+  #shell   { display: flex; flex-direction: column; }
+  #content { order: 1; }
+  #sidebar {
+    order: 2;
+    border-right: 0;
+    border-top: 1px solid var(--rule);
+    padding: 13px;
+  }
+  #content { padding: 17px 15px 24px; }
+  #intro   { display: block; }
+  #intro .mug { margin: 0 0 14px; }
+  .plist li { display: block; }
+  .plist .thumb { margin-bottom: 9px; }
+  .plist .thumb img { width: 100%; height: 130px; }
+  table.spec th { width: auto; }
+  .pdfbox object, .pdfbox iframe { height: 560px; }
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" role="img" aria-label="Photograph pending">
+  <defs>
+    <pattern id="h" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#e0dbcb" stroke-width="3"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="480" fill="#f6f3ea"/>
+  <rect width="640" height="480" fill="url(#h)"/>
+  <text x="320" y="248" text-anchor="middle" font-family="Verdana, Geneva, sans-serif" font-size="22" fill="#9a9382">photograph pending</text>
+</svg>

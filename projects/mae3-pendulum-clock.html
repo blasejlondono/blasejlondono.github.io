@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAE3 Pendulum Clock &mdash; Blase Londo&ntilde;o</title>
+<meta name="description" content="An escapement-wheel pendulum clock with irregular monkey-shaped geometry, with eight adjustable weights placed by a MATLAB optimisation to hold a two-second period within 2.8 percent.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div id="page">
+
+  <div id="masthead">
+    <h1><a href="../index.html">Blase Londo&ntilde;o</a></h1>
+    <p class="tagline">Mechanical Engineering &middot; UC San Diego &rsquo;27 &middot; Controls, Robotics &amp; Mechatronics</p>
+  </div>
+
+  <ul id="topnav">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../projects.html">Projects</a></li>
+    <li><a href="../resume.html">R&eacute;sum&eacute;</a></li>
+  </ul>
+
+  <div id="shell">
+
+    <!-- ========================= sidebar ========================= -->
+    <div id="sidebar">
+
+      <div class="box">
+        <div class="box-hd">Navigation</div>
+        <ul class="nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../resume.html">R&eacute;sum&eacute;</a></li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <div class="box-hd">Projects</div>
+        <ul class="nav sub">
+          <li><a href="nfac-transducer-adaptor-pcb.html">NFAC Transducer Adaptor PCB</a></li>
+          <li><a href="machined-kinematic-cannon.html">Machined Kinematic Cannon</a></li>
+          <li><a href="motor-control-architecture.html">Motor Control Architecture</a></li>
+          <li><a href="rover-fin-ray-end-effector.html">Rover Fin-Ray End Effector</a></li>
+          <li><a href="thermoacoustic-refrigerator.html">Thermoacoustic Refrigerator</a></li>
+          <li><a href="carbon-fiber-wheel-hubs.html">Carbon Fiber Wheel Hubs</a></li>
+          <li><a href="rover-power-distribution-pcb.html">Rover Power Distribution PCB</a></li>
+          <li><a href="pirouette-recognition-lstm.html">Pirouette Recognition LSTM</a></li>
+          <li><a href="mae3-robotic-arm.html">MAE3 Robotic Arm</a></li>
+          <li><a class="here" href="mae3-pendulum-clock.html">MAE3 Pendulum Clock</a></li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <div class="box-hd">Contact</div>
+        <div class="box-bd">
+          <p><a href="mailto:blasejlondono@hotmail.com">blasejlondono<br>@hotmail.com</a></p>
+          <p><a href="https://www.linkedin.com/in/blase-londono">LinkedIn</a><br>
+             <a href="https://github.com/blasejlondono">GitHub</a></p>
+        </div>
+      </div>
+
+    </div>
+    <!-- ======================= end sidebar ======================= -->
+
+    <div id="content">
+
+      <h2>MAE3 Pendulum Clock</h2>
+      <p class="deck">MATLAB optimisation of an oscillation period, on a
+      deliberately awkward pendulum.</p>
+
+      <table class="spec">
+        <tr><th>Where</th><td>MAE3, UC San Diego</td></tr>
+        <tr><th>When</th><td>2025</td></tr>
+        <tr><th>Tools</th><td>MATLAB, LaserCAMM laser cutting, 3D printing, drill press</td></tr>
+        <tr><th>Target</th><td>Two-second period</td></tr>
+        <tr><th>Result</th><td>Under 2.8% timing error</td></tr>
+      </table>
+
+      <figure>
+        <img src="../img/pendulum-1.jpg" alt="The finished monkey-shaped pendulum clock">
+        <figcaption>The finished clock. The silver bolts on the monkey are the
+        eight adjustable weights the MATLAB script placed.</figcaption>
+      </figure>
+
+      <p>In this class project I manufactured and analysed a pre-designed
+      escapement-wheel pendulum clock with irregular, monkey-shaped geometry. I
+      laser-cut the yellow acrylic escapement wheel and pendulum, drilled and
+      countersunk the tap and clearance holes, and wrote a MATLAB script to
+      optimise the locations of eight adjustable weights across the pendulum body
+      &mdash; vertically aligning the mass centre and preserving a two-second
+      period.</p>
+
+      <p>The optimised weight staging achieved under 2.8% timing error. I
+      validated the theoretical period experimentally; the script and the testing
+      process are both documented in the report below.</p>
+
+      <h3>Documents</h3>
+      <ul class="files">
+        <li><a href="../files/londono_blase_pendulum.pdf">Clock report (PDF)</a></li>
+      </ul>
+
+      <hr>
+      <p><a href="../projects.html">&laquo; Back to projects</a></p>
+
+    </div>
+  </div>
+
+  <div id="footer">
+    <span>&copy; 2026 Blase Londo&ntilde;o &middot; <a href="mailto:blasejlondono@hotmail.com">blasejlondono@hotmail.com</a></span>
+    <span>Hand-written HTML &amp; CSS. No frameworks, no JavaScript.</span>
+  </div>
+
+</div>
+
+</body>
+</html>

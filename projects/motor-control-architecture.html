@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Motor Control Architecture &mdash; Blase Londo&ntilde;o</title>
+<meta name="description" content="A CAN bus motor control network on a Raspberry Pi with ODrive controllers, replacing USB for a five-bar legged robot testbed in the Gravish Bioinspired Robotics Lab.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div id="page">
+
+  <div id="masthead">
+    <h1><a href="../index.html">Blase Londo&ntilde;o</a></h1>
+    <p class="tagline">Mechanical Engineering &middot; UC San Diego &rsquo;27 &middot; Controls, Robotics &amp; Mechatronics</p>
+  </div>
+
+  <ul id="topnav">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../projects.html">Projects</a></li>
+    <li><a href="../resume.html">R&eacute;sum&eacute;</a></li>
+  </ul>
+
+  <div id="shell">
+
+    <!-- ========================= sidebar ========================= -->
+    <div id="sidebar">
+
+      <div class="box">
+        <div class="box-hd">Navigation</div>
+        <ul class="nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../resume.html">R&eacute;sum&eacute;</a></li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <div class="box-hd">Projects</div>
+        <ul class="nav sub">
+          <li><a href="nfac-transducer-adaptor-pcb.html">NFAC Transducer Adaptor PCB</a></li>
+          <li><a href="machined-kinematic-cannon.html">Machined Kinematic Cannon</a></li>
+          <li><a class="here" href="motor-control-architecture.html">Motor Control Architecture</a></li>
+          <li><a href="rover-fin-ray-end-effector.html">Rover Fin-Ray End Effector</a></li>
+          <li><a href="thermoacoustic-refrigerator.html">Thermoacoustic Refrigerator</a></li>
+          <li><a href="carbon-fiber-wheel-hubs.html">Carbon Fiber Wheel Hubs</a></li>
+          <li><a href="rover-power-distribution-pcb.html">Rover Power Distribution PCB</a></li>
+          <li><a href="pirouette-recognition-lstm.html">Pirouette Recognition LSTM</a></li>
+          <li><a href="mae3-robotic-arm.html">MAE3 Robotic Arm</a></li>
+          <li><a href="mae3-pendulum-clock.html">MAE3 Pendulum Clock</a></li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <div class="box-hd">Contact</div>
+        <div class="box-bd">
+          <p><a href="mailto:blasejlondono@hotmail.com">blasejlondono<br>@hotmail.com</a></p>
+          <p><a href="https://www.linkedin.com/in/blase-londono">LinkedIn</a><br>
+             <a href="https://github.com/blasejlondono">GitHub</a></p>
+        </div>
+      </div>
+
+    </div>
+    <!-- ======================= end sidebar ======================= -->
+
+    <div id="content">
+
+      <h2>Motor Control Architecture</h2>
+      <p class="deck">Embedded systems infrastructure for closed-loop locomotion
+      research.</p>
+
+      <table class="spec">
+        <tr><th>Where</th><td>Gravish Bioinspired Robotics Lab, UC San Diego</td></tr>
+        <tr><th>When</th><td>April 2026 &ndash; present</td></tr>
+        <tr><th>Hardware</th><td>Raspberry Pi on Ubuntu, ODrive v3.6 controllers, Quantum MT5208 motors, absolute encoders</td></tr>
+        <tr><th>Status</th><td>Network up and reachable over SSH; bandwidth validation still to run</td></tr>
+      </table>
+
+      <!-- swap in the real wiring diagram when it is to hand -->
+      <figure>
+        <img src="../img/placeholder.svg" alt="CAN bus wiring diagram">
+        <figcaption>A basic wiring diagram I drew for the new CAN bus
+        architecture.</figcaption>
+      </figure>
+
+      <p>My lab&rsquo;s five-bar legged locomotion testbed was using direct USB to
+      talk to its motor controllers, which introduced enough timing jitter to
+      limit how tightly we could close a control loop. On advice from Yonder
+      Dynamics&rsquo; software team, I proposed moving to a CAN bus network for more
+      deterministic timing and cleaner scaling as joints get added.</p>
+
+      <p>I built it on a Raspberry Pi running Ubuntu, and wired, soldered and
+      configured ODrive v3.6 controllers driving Quantum MT5208 motors, with
+      absolute encoders for feedback. Most of the time went into driver conflicts
+      and dependency issues in the legacy testbed code &mdash; years-old browser
+      Jupyter, among other things.</p>
+
+      <p>The network is up and reachable over SSH, but spring quarter ended before
+      I could run full bandwidth validation. That is the first thing I will do when
+      I am back, along with moving over to ODrive S1 controllers and a Waveshare
+      CAN HAT for better performance, and cleaner wiring.</p>
+
+      <hr>
+      <p><a href="../projects.html">&laquo; Back to projects</a></p>
+
+    </div>
+  </div>
+
+  <div id="footer">
+    <span>&copy; 2026 Blase Londo&ntilde;o &middot; <a href="mailto:blasejlondono@hotmail.com">blasejlondono@hotmail.com</a></span>
+    <span>Hand-written HTML &amp; CSS. No frameworks, no JavaScript.</span>
+  </div>
+
+</div>
+
+</body>
+</html>

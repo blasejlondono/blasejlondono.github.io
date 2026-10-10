@@ -1,11 +1,185 @@
----
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blase Londo&ntilde;o &mdash; Mechanical Engineering</title>
+<meta name="description" content="Blase Londono, mechanical engineering at UC San Diego. Controls, robotics and mechatronics: CAD, composites, PCBs, machining and motor control.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-layout: wrapper
----
+<div id="page">
 
-{% include hero.html%}
-{% include projects.html%}
-{% include skills.html%}
-{% include contact.html%}
+  <div id="masthead">
+    <h1><a href="index.html">Blase Londo&ntilde;o</a></h1>
+    <p class="tagline">Mechanical Engineering &middot; UC San Diego &rsquo;27 &middot; Controls, Robotics &amp; Mechatronics</p>
+  </div>
+
+  <ul id="topnav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="resume.html">R&eacute;sum&eacute;</a></li>
+  </ul>
+
+  <div id="shell">
+
+    <!-- ========================= sidebar ========================= -->
+    <div id="sidebar">
+
+      <div class="box">
+        <div class="box-hd">Navigation</div>
+        <ul class="nav">
+          <li><a class="here" href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resume.html">R&eacute;sum&eacute;</a></li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <div class="box-hd">Projects</div>
+        <ul class="nav sub">
+          <li><a href="projects/nfac-transducer-adaptor-pcb.html">NFAC Transducer Adaptor PCB</a></li>
+          <li><a href="projects/machined-kinematic-cannon.html">Machined Kinematic Cannon</a></li>
+          <li><a href="projects/motor-control-architecture.html">Motor Control Architecture</a></li>
+          <li><a href="projects/rover-fin-ray-end-effector.html">Rover Fin-Ray End Effector</a></li>
+          <li><a href="projects/thermoacoustic-refrigerator.html">Thermoacoustic Refrigerator</a></li>
+          <li><a href="projects/carbon-fiber-wheel-hubs.html">Carbon Fiber Wheel Hubs</a></li>
+          <li><a href="projects/rover-power-distribution-pcb.html">Rover Power Distribution PCB</a></li>
+          <li><a href="projects/pirouette-recognition-lstm.html">Pirouette Recognition LSTM</a></li>
+          <li><a href="projects/mae3-robotic-arm.html">MAE3 Robotic Arm</a></li>
+          <li><a href="projects/mae3-pendulum-clock.html">MAE3 Pendulum Clock</a></li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <div class="box-hd">Contact</div>
+        <div class="box-bd">
+          <p><a href="mailto:blasejlondono@hotmail.com">blasejlondono<br>@hotmail.com</a></p>
+          <p><a href="https://www.linkedin.com/in/blase-londono">LinkedIn</a><br>
+             <a href="https://github.com/blasejlondono">GitHub</a></p>
+          <p>Santa Monica &amp;<br>San Diego, California</p>
+        </div>
+      </div>
+
+    </div>
+    <!-- ======================= end sidebar ======================= -->
+
+    <div id="content">
+
+      <h2>Hello &mdash; I&rsquo;m Blase.</h2>
+      <p class="deck">I build hardware, then try to break it.</p>
+
+      <div id="intro">
+        <div class="copy">
+          <p>I&rsquo;m a mechanical engineering undergraduate at UC San Diego,
+          graduating in 2027 and staying on for a master&rsquo;s. I&rsquo;ve worked
+          across most of the stack &mdash; CAD, composites, PCB design, MATLAB,
+          machining and motor control &mdash; and I like the part of a project
+          where the drawing stops being a drawing.</p>
+
+          <p>So far that has meant instrumentation hardware for a full-scale wind
+          tunnel at <strong>NASA Ames</strong>, a CAN bus motor control network in
+          <strong>Professor Gravish&rsquo;s bioinspired robotics lab</strong>, and
+          composite wheel hubs and a compliant gripper for <strong>UCSD&rsquo;s Mars
+          rover team</strong>. I&rsquo;m always looking for environments where I can
+          build fast and test to failure.</p>
+
+          <p>A few of those are below. The <a href="projects.html">projects
+          page</a> has all ten, and my <a href="resume.html">r&eacute;sum&eacute;</a>
+          is here as well.</p>
+        </div>
+
+        <div class="mug">
+          <img src="img/headshot.jpg" width="136" alt="Blase Londo&ntilde;o">
+          <p class="cap">Blase Londo&ntilde;o<br>La Jolla, California</p>
+        </div>
+      </div>
+
+      <h3>Currently</h3>
+      <table class="spec">
+        <tr>
+          <th>Internship</th>
+          <td>Mechanical Engineering Intern, <strong>Odin Dynamics</strong> &mdash;
+              UUV communications mast and full-vehicle wire harnessing.</td>
+        </tr>
+        <tr>
+          <th>Research</th>
+          <td>Undergraduate Research Assistant, <strong>Gravish Bioinspired
+              Robotics Lab</strong> &mdash; CAN bus control architecture for a
+              five-bar legged testbed.</td>
+        </tr>
+        <tr>
+          <th>Team</th>
+          <td>Mechanical Engineer, <strong>UCSD Yonder Dynamics</strong> &mdash;
+              Mars rover composites and manipulator hardware.</td>
+        </tr>
+        <tr>
+          <th>School</th>
+          <td>B.S. Mechanical Engineering, UC San Diego &mdash; expected Fall 2027,
+              3.94 GPA. M.S. incoming Fall 2028.</td>
+        </tr>
+      </table>
+
+      <h3>Selected work</h3>
+      <ul class="plist">
+
+        <li>
+          <div class="thumb"><a href="projects/nfac-transducer-adaptor-pcb.html"><img src="img/placeholder.svg" alt="NFAC transducer adaptor PCB"></a></div>
+          <div class="meat">
+            <h4><a href="projects/nfac-transducer-adaptor-pcb.html">NFAC Transducer Adaptor PCB</a></h4>
+            <p>A low-cost KiCad board that fixes a signal-clipping condition on
+            decades-old strain gauge amplifiers, recovering roughly two channels
+            per board across a NASA wind tunnel data acquisition system.</p>
+            <p class="tags">KiCad &middot; NASA Ames &middot; 2026</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="thumb"><a href="projects/rover-fin-ray-end-effector.html"><img src="img/placeholder.svg" alt="Rover fin-ray end effector"></a></div>
+          <div class="meat">
+            <h4><a href="projects/rover-fin-ray-end-effector.html">Rover Fin-Ray End Effector</a></h4>
+            <p>A compliant TPU gripper whose ribs buckle in a controlled way so
+            each finger wraps around whatever it touches. Fielded on the 2026
+            competition rover.</p>
+            <p class="tags">TPU &middot; ASA &middot; Yonder Dynamics &middot; 2026</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="thumb"><a href="projects/thermoacoustic-refrigerator.html"><img src="img/thermo-1.jpg" alt="Thermoacoustic refrigerator"></a></div>
+          <div class="meat">
+            <h4><a href="projects/thermoacoustic-refrigerator.html">Thermoacoustic Refrigerator</a></h4>
+            <p>A heat pump driven by a standing wave &mdash; no compressor, no
+            refrigerant, no moving parts. Led a three-person team and reached a
+            steady-state 4&deg;C drop.</p>
+            <p class="tags">ANSYS Fluent &middot; Onshape &middot; IEEE-HKN &middot; 2026</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="thumb"><a href="projects/carbon-fiber-wheel-hubs.html"><img src="img/hubs-1.jpg" alt="Carbon fiber wheel hubs"></a></div>
+          <div class="meat">
+            <h4><a href="projects/carbon-fiber-wheel-hubs.html">Carbon Fiber Wheel Hubs</a></h4>
+            <p>A three-ply vacuum-bag wet layup over a wood-lathed mould, CNC
+            post-processed. Half the weight of the printed hubs they replaced.</p>
+            <p class="tags">Composites &middot; Onshape &middot; Tormach &middot; 2025</p>
+          </div>
+        </li>
+
+      </ul>
+
+      <p><a href="projects.html">&raquo; See all ten projects</a></p>
+
+    </div>
+  </div>
+
+  <div id="footer">
+    <span>&copy; 2026 Blase Londo&ntilde;o &middot; <a href="mailto:blasejlondono@hotmail.com">blasejlondono@hotmail.com</a></span>
+    <span>Hand-written HTML &amp; CSS. No frameworks, no JavaScript.</span>
+  </div>
+
+</div>
+
+</body>
+</html>

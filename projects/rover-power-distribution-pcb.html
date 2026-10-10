@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rover Power Distribution PCB &mdash; Blase Londo&ntilde;o</title>
+<meta name="description" content="A 24 V 60 A two-layer power distribution board designed in Altium for the UCSD Yonder Dynamics Mars rover, with per-fuse indicator LEDs and a 20 percent smaller footprint.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div id="page">
+
+  <div id="masthead">
+    <h1><a href="../index.html">Blase Londo&ntilde;o</a></h1>
+    <p class="tagline">Mechanical Engineering &middot; UC San Diego &rsquo;27 &middot; Controls, Robotics &amp; Mechatronics</p>
+  </div>
+
+  <ul id="topnav">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../projects.html">Projects</a></li>
+    <li><a href="../resume.html">R&eacute;sum&eacute;</a></li>
+  </ul>
+
+  <div id="shell">
+
+    <!-- ========================= sidebar ========================= -->
+    <div id="sidebar">
+
+      <div class="box">
+        <div class="box-hd">Navigation</div>
+        <ul class="nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../resume.html">R&eacute;sum&eacute;</a></li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <div class="box-hd">Projects</div>
+        <ul class="nav sub">
+          <li><a href="nfac-transducer-adaptor-pcb.html">NFAC Transducer Adaptor PCB</a></li>
+          <li><a href="machined-kinematic-cannon.html">Machined Kinematic Cannon</a></li>
+          <li><a href="motor-control-architecture.html">Motor Control Architecture</a></li>
+          <li><a href="rover-fin-ray-end-effector.html">Rover Fin-Ray End Effector</a></li>
+          <li><a href="thermoacoustic-refrigerator.html">Thermoacoustic Refrigerator</a></li>
+          <li><a href="carbon-fiber-wheel-hubs.html">Carbon Fiber Wheel Hubs</a></li>
+          <li><a class="here" href="rover-power-distribution-pcb.html">Rover Power Distribution PCB</a></li>
+          <li><a href="pirouette-recognition-lstm.html">Pirouette Recognition LSTM</a></li>
+          <li><a href="mae3-robotic-arm.html">MAE3 Robotic Arm</a></li>
+          <li><a href="mae3-pendulum-clock.html">MAE3 Pendulum Clock</a></li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <div class="box-hd">Contact</div>
+        <div class="box-bd">
+          <p><a href="mailto:blasejlondono@hotmail.com">blasejlondono<br>@hotmail.com</a></p>
+          <p><a href="https://www.linkedin.com/in/blase-londono">LinkedIn</a><br>
+             <a href="https://github.com/blasejlondono">GitHub</a></p>
+        </div>
+      </div>
+
+    </div>
+    <!-- ======================= end sidebar ======================= -->
+
+    <div id="content">
+
+      <h2>Rover Power Distribution PCB</h2>
+      <p class="deck">More power, better thermals, and a fuse that tells you it has
+      blown.</p>
+
+      <table class="spec">
+        <tr><th>Where</th><td>UCSD Yonder Dynamics</td></tr>
+        <tr><th>When</th><td>2025</td></tr>
+        <tr><th>Tools</th><td>Altium Designer</td></tr>
+        <tr><th>Spec</th><td>24&nbsp;V / 60&nbsp;A, two layers</td></tr>
+        <tr><th>Outcome</th><td>20% smaller footprint; deployed on the competition rover</td></tr>
+      </table>
+
+      <figure>
+        <img src="../img/pcb-1.jpg" alt="Render of the rover power distribution board">
+        <figcaption>The board as rendered. Fused 5&nbsp;V and 12&nbsp;V channels
+        along the bottom, higher-current channels above, with an indicator LED
+        beside every fuse.</figcaption>
+      </figure>
+
+      <p>The rover&rsquo;s power distribution board needed a connector refresh, so
+      while we were at it we took the opportunity to fix a couple of things that
+      had been bothering us.</p>
+
+      <p>I rebuilt it as a custom two-layer schematic and layout in Altium,
+      rerouting around the new connectors and cleaning up the architecture. For
+      thermal headroom at worst-case load I used polygon pours around the XF vias
+      and scaled trace widths to each channel&rsquo;s current draw. I also wired an
+      indicator LED in parallel with every fuse, so a blown fuse announces itself
+      instead of having to be probed for.</p>
+
+      <p>I populated and soldered the board when it arrived and ran an electrical
+      stress test on the traces; it handled around 860&nbsp;W before they burned
+      out. The redesign cut the PCB footprint by 20% and was deployed on last
+      year&rsquo;s competition rover.</p>
+
+      <hr>
+      <p><a href="../projects.html">&laquo; Back to projects</a></p>
+
+    </div>
+  </div>
+
+  <div id="footer">
+    <span>&copy; 2026 Blase Londo&ntilde;o &middot; <a href="mailto:blasejlondono@hotmail.com">blasejlondono@hotmail.com</a></span>
+    <span>Hand-written HTML &amp; CSS. No frameworks, no JavaScript.</span>
+  </div>
+
+</div>
+
+</body>
+</html>

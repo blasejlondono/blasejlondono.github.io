@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thermoacoustic Refrigerator &mdash; Blase Londo&ntilde;o</title>
+<meta name="description" content="An acoustic pressure-driven heat pump built by a three-person IEEE-HKN team at UC San Diego, modelled in ANSYS Fluent and reaching a steady-state 4 degree C drop.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div id="page">
+
+  <div id="masthead">
+    <h1><a href="../index.html">Blase Londo&ntilde;o</a></h1>
+    <p class="tagline">Mechanical Engineering &middot; UC San Diego &rsquo;27 &middot; Controls, Robotics &amp; Mechatronics</p>
+  </div>
+
+  <ul id="topnav">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../projects.html">Projects</a></li>
+    <li><a href="../resume.html">R&eacute;sum&eacute;</a></li>
+  </ul>
+
+  <div id="shell">
+
+    <!-- ========================= sidebar ========================= -->
+    <div id="sidebar">
+
+      <div class="box">
+        <div class="box-hd">Navigation</div>
+        <ul class="nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../resume.html">R&eacute;sum&eacute;</a></li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <div class="box-hd">Projects</div>
+        <ul class="nav sub">
+          <li><a href="nfac-transducer-adaptor-pcb.html">NFAC Transducer Adaptor PCB</a></li>
+          <li><a href="machined-kinematic-cannon.html">Machined Kinematic Cannon</a></li>
+          <li><a href="motor-control-architecture.html">Motor Control Architecture</a></li>
+          <li><a href="rover-fin-ray-end-effector.html">Rover Fin-Ray End Effector</a></li>
+          <li><a class="here" href="thermoacoustic-refrigerator.html">Thermoacoustic Refrigerator</a></li>
+          <li><a href="carbon-fiber-wheel-hubs.html">Carbon Fiber Wheel Hubs</a></li>
+          <li><a href="rover-power-distribution-pcb.html">Rover Power Distribution PCB</a></li>
+          <li><a href="pirouette-recognition-lstm.html">Pirouette Recognition LSTM</a></li>
+          <li><a href="mae3-robotic-arm.html">MAE3 Robotic Arm</a></li>
+          <li><a href="mae3-pendulum-clock.html">MAE3 Pendulum Clock</a></li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <div class="box-hd">Contact</div>
+        <div class="box-bd">
+          <p><a href="mailto:blasejlondono@hotmail.com">blasejlondono<br>@hotmail.com</a></p>
+          <p><a href="https://www.linkedin.com/in/blase-londono">LinkedIn</a><br>
+             <a href="https://github.com/blasejlondono">GitHub</a></p>
+        </div>
+      </div>
+
+    </div>
+    <!-- ======================= end sidebar ======================= -->
+
+    <div id="content">
+
+      <h2>Thermoacoustic Refrigerator</h2>
+      <p class="deck">An acoustic pressure-driven heat pump.</p>
+
+      <table class="spec">
+        <tr><th>Where</th><td>IEEE-HKN project team, UC San Diego</td></tr>
+        <tr><th>When</th><td>February &ndash; May 2026</td></tr>
+        <tr><th>Role</th><td>Project lead, three-person team, $500 budget</td></tr>
+        <tr><th>Tools</th><td>ANSYS Fluent, Onshape, 3D printing</td></tr>
+        <tr><th>Outcome</th><td>Steady-state 4&deg;C drop at 1100&nbsp;Hz</td></tr>
+      </table>
+
+      <figure>
+        <img src="../img/thermo-1.jpg" alt="Onshape model of the resonator, exterior and section view">
+        <figcaption>The resonator assembly in Onshape &mdash; exterior and
+        section. The stack sits where the standing wave puts it.</figcaption>
+      </figure>
+
+      <p>A thermoacoustic refrigerator pumps heat with sound. A standing wave in a
+      sealed tube drives a pressure gradient across a stack, moving heat with no
+      moving parts and no refrigerant. It is a classic heat engine and
+      refrigerator cycle that uses standing waves instead of a compressor. I led a
+      three-person IEEE-HKN team building one from scratch.</p>
+
+      <p>It only works if the driver runs at a frequency that puts the heat
+      exchanger&rsquo;s stack at the right point in the wave. I modelled a pressure
+      impulse in ANSYS Fluent and measured the time between pressure peaks at the
+      endcap to find the resonator&rsquo;s natural frequency, around 370&nbsp;Hz.
+      Our stack was staged at the third harmonic, putting the operating frequency
+      near 1100&nbsp;Hz.</p>
+
+      <p>I developed the structural assembly in Onshape and manufactured the
+      prototype. It reached a steady-state drop of 4&deg;C at 1100&nbsp;Hz &mdash;
+      enough to validate the node placement, with the remaining gap down to
+      thermal conduction and sealing losses. Advised by Professor Prabhakar
+      Bandaru and Christopher Fitzhugh.</p>
+
+      <hr>
+      <p><a href="../projects.html">&laquo; Back to projects</a></p>
+
+    </div>
+  </div>
+
+  <div id="footer">
+    <span>&copy; 2026 Blase Londo&ntilde;o &middot; <a href="mailto:blasejlondono@hotmail.com">blasejlondono@hotmail.com</a></span>
+    <span>Hand-written HTML &amp; CSS. No frameworks, no JavaScript.</span>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,8 +1,222 @@
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects &mdash; Blase Londo&ntilde;o</title>
+<meta name="description" content="Ten mechanical and electrical engineering projects by Blase Londono: PCBs, composites, compliant mechanisms, motor control and machining.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-layout: wrapper
-permalink: /projects/
+<div id="page">
 
----
+  <div id="masthead">
+    <h1><a href="index.html">Blase Londo&ntilde;o</a></h1>
+    <p class="tagline">Mechanical Engineering &middot; UC San Diego &rsquo;27 &middot; Controls, Robotics &amp; Mechatronics</p>
+  </div>
 
-{% include projects.html%}
+  <ul id="topnav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="resume.html">R&eacute;sum&eacute;</a></li>
+  </ul>
+
+  <div id="shell">
+
+    <!-- ========================= sidebar ========================= -->
+    <div id="sidebar">
+
+      <div class="box">
+        <div class="box-hd">Navigation</div>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="here" href="projects.html">Projects</a></li>
+          <li><a href="resume.html">R&eacute;sum&eacute;</a></li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <div class="box-hd">Projects</div>
+        <ul class="nav sub">
+          <li><a href="projects/nfac-transducer-adaptor-pcb.html">NFAC Transducer Adaptor PCB</a></li>
+          <li><a href="projects/machined-kinematic-cannon.html">Machined Kinematic Cannon</a></li>
+          <li><a href="projects/motor-control-architecture.html">Motor Control Architecture</a></li>
+          <li><a href="projects/rover-fin-ray-end-effector.html">Rover Fin-Ray End Effector</a></li>
+          <li><a href="projects/thermoacoustic-refrigerator.html">Thermoacoustic Refrigerator</a></li>
+          <li><a href="projects/carbon-fiber-wheel-hubs.html">Carbon Fiber Wheel Hubs</a></li>
+          <li><a href="projects/rover-power-distribution-pcb.html">Rover Power Distribution PCB</a></li>
+          <li><a href="projects/pirouette-recognition-lstm.html">Pirouette Recognition LSTM</a></li>
+          <li><a href="projects/mae3-robotic-arm.html">MAE3 Robotic Arm</a></li>
+          <li><a href="projects/mae3-pendulum-clock.html">MAE3 Pendulum Clock</a></li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <div class="box-hd">Contact</div>
+        <div class="box-bd">
+          <p><a href="mailto:blasejlondono@hotmail.com">blasejlondono<br>@hotmail.com</a></p>
+          <p><a href="https://www.linkedin.com/in/blase-londono">LinkedIn</a><br>
+             <a href="https://github.com/blasejlondono">GitHub</a></p>
+          <p>Santa Monica &amp;<br>San Diego, California</p>
+        </div>
+      </div>
+
+    </div>
+    <!-- ======================= end sidebar ======================= -->
+
+    <div id="content">
+
+      <h2>Projects</h2>
+      <p class="deck">Ten things I have designed, built, broken or fixed.</p>
+
+      <h3>Internships &amp; research</h3>
+      <ul class="plist">
+
+        <li>
+          <div class="thumb"><a href="projects/nfac-transducer-adaptor-pcb.html"><img src="img/placeholder.svg" alt="NFAC transducer adaptor PCB"></a></div>
+          <div class="meat">
+            <h4><a href="projects/nfac-transducer-adaptor-pcb.html">NFAC Transducer Adaptor PCB</a></h4>
+            <p>A six-year-old facility worknote described a signal-clipping
+            condition on NFAC&rsquo;s strain gauge amplifiers. I designed a small
+            KiCad adaptor that ties excitation common to the negative signal leg
+            and satisfies the amplifier&rsquo;s 10&nbsp;V window &mdash; drawn
+            entirely on airgapped machines, with every footprint built by hand
+            from datasheets.</p>
+            <p class="tags">KiCad &middot; NASA Ames Research Center &middot; 2026</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="thumb"><a href="projects/motor-control-architecture.html"><img src="img/placeholder.svg" alt="CAN bus motor control architecture"></a></div>
+          <div class="meat">
+            <h4><a href="projects/motor-control-architecture.html">Motor Control Architecture</a></h4>
+            <p>Our five-bar legged testbed was talking to its motor controllers
+            over USB, with enough timing jitter to limit how tightly we could
+            close a loop. I moved it to a CAN bus on a Raspberry Pi with ODrive
+            controllers and absolute encoder feedback.</p>
+            <p class="tags">CAN bus &middot; ODrive &middot; Gravish Lab &middot; 2026</p>
+          </div>
+        </li>
+
+      </ul>
+
+      <h3>UCSD Yonder Dynamics &mdash; Mars rover</h3>
+      <ul class="plist">
+
+        <li>
+          <div class="thumb"><a href="projects/rover-fin-ray-end-effector.html"><img src="img/placeholder.svg" alt="Rover fin-ray end effector"></a></div>
+          <div class="meat">
+            <h4><a href="projects/rover-fin-ray-end-effector.html">Rover Fin-Ray End Effector</a></h4>
+            <p>Competition rules change every year, so the manipulator has to grab
+            objects we cannot specify in advance. A fin-ray gripper printed in TPU
+            buckles its ribs in a controlled way and conforms to whatever it
+            touches. It went to competition on the rover.</p>
+            <p class="tags">TPU &middot; ASA &middot; Compliant mechanisms &middot; 2026</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="thumb"><a href="projects/carbon-fiber-wheel-hubs.html"><img src="img/hubs-1.jpg" alt="Carbon fiber wheel hubs"></a></div>
+          <div class="meat">
+            <h4><a href="projects/carbon-fiber-wheel-hubs.html">Carbon Fiber Wheel Hubs</a></h4>
+            <p>The rover was running close to the competition weight limit, and
+            the high-infill PLA hubs were the easiest thing to take weight out of.
+            Wood-lathed mould, three-ply vacuum-bag wet layup, CNC post-processing
+            &mdash; 50% lighter than the originals.</p>
+            <p class="tags">Composites &middot; Onshape &middot; Tormach PCNC 440 &middot; 2025</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="thumb"><a href="projects/rover-power-distribution-pcb.html"><img src="img/pcb-1.jpg" alt="Rover power distribution PCB"></a></div>
+          <div class="meat">
+            <h4><a href="projects/rover-power-distribution-pcb.html">Rover Power Distribution PCB</a></h4>
+            <p>A 24&nbsp;V / 60&nbsp;A two-layer board rebuilt in Altium around new
+            connectors, with trace widths scaled per channel, polygon pours for
+            thermal headroom, and an indicator LED across every fuse so a blown
+            fuse announces itself. 20% smaller footprint.</p>
+            <p class="tags">Altium Designer &middot; Power electronics &middot; 2025</p>
+          </div>
+        </li>
+
+      </ul>
+
+      <h3>Projects &amp; coursework</h3>
+      <ul class="plist">
+
+        <li>
+          <div class="thumb"><a href="projects/thermoacoustic-refrigerator.html"><img src="img/thermo-1.jpg" alt="Thermoacoustic refrigerator"></a></div>
+          <div class="meat">
+            <h4><a href="projects/thermoacoustic-refrigerator.html">Thermoacoustic Refrigerator</a></h4>
+            <p>A standing wave in a sealed tube drives a pressure gradient across
+            a stack and pumps heat &mdash; a refrigeration cycle with no
+            compressor and no refrigerant. I led a three-person IEEE-HKN team,
+            found the resonator&rsquo;s natural frequency in ANSYS Fluent, and got
+            a steady 4&deg;C drop.</p>
+            <p class="tags">ANSYS Fluent &middot; Onshape &middot; IEEE-HKN &middot; 2026</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="thumb"><a href="projects/machined-kinematic-cannon.html"><img src="img/placeholder.svg" alt="Machined kinematic cannon"></a></div>
+          <div class="meat">
+            <h4><a href="projects/machined-kinematic-cannon.html">Machined Kinematic Cannon</a></h4>
+            <p>A spring-loaded ball bearing launcher machined from supplied
+            drawings for a UCSD machining seminar. Manual mill and lathe for the
+            aluminium, CNC for the Delrin chassis and nozzle, every mating feature
+            held to &plusmn;0.003&Prime;.</p>
+            <p class="tags">Manual mill &amp; lathe &middot; CNC &middot; GD&amp;T &middot; 2026</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="thumb"><a href="projects/pirouette-recognition-lstm.html"><img src="img/lstm-1.jpg" alt="LSTM training curves"></a></div>
+          <div class="meat">
+            <h4><a href="projects/pirouette-recognition-lstm.html">Pirouette Recognition LSTM</a></h4>
+            <p>An LSTM in MATLAB classifying turn type from IMU time series,
+            trained on a public dataset of about 85 labelled turns across six
+            dancers, with joint torques backed out from inertia estimates fed in
+            alongside the raw signal.</p>
+            <p class="tags">MATLAB &middot; Deep learning &middot; IMU &middot; 2025</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="thumb"><a href="projects/mae3-robotic-arm.html"><img src="img/arm-1.jpg" alt="MAE3 robotic arm"></a></div>
+          <div class="meat">
+            <h4><a href="projects/mae3-robotic-arm.html">MAE3 Robotic Arm</a></h4>
+            <p>Start inside a 10&Prime; cube, then roughly triple your height to put
+            rings on a 3&nbsp;ft model of the Sun God. I led the mechanical design
+            around a 2:1 rack and pinion packed along the cube&rsquo;s diagonal,
+            reaching 28&Prime; of vertical extension under load.</p>
+            <p class="tags">Fusion 360 &middot; Laser cutting &middot; Sheet metal &middot; 2025</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="thumb"><a href="projects/mae3-pendulum-clock.html"><img src="img/pendulum-1.jpg" alt="Escapement wheel pendulum clock"></a></div>
+          <div class="meat">
+            <h4><a href="projects/mae3-pendulum-clock.html">MAE3 Pendulum Clock</a></h4>
+            <p>An escapement-wheel clock with a deliberately irregular
+            (monkey-shaped) pendulum. A MATLAB optimisation placed eight adjustable
+            weights to align the mass centre and hold a two-second period, landing
+            inside 2.8% timing error.</p>
+            <p class="tags">MATLAB &middot; Laser cutting &middot; Dynamics &middot; 2025</p>
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+
+  <div id="footer">
+    <span>&copy; 2026 Blase Londo&ntilde;o &middot; <a href="mailto:blasejlondono@hotmail.com">blasejlondono@hotmail.com</a></span>
+    <span>Hand-written HTML &amp; CSS. No frameworks, no JavaScript.</span>
+  </div>
+
+</div>
+
+</body>
+</html>
