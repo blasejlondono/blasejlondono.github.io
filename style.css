@@ -62,10 +62,10 @@ body {
   letter-spacing: 0.9px;
   text-transform: uppercase;
   color: var(--ink-soft);
-  max-width: none;   /* opt out of the 66ch measure set on p */
 }
-/* keep each phrase whole -- if the tagline has to wrap, it breaks at a
-   middot, never inside "Controls, Robotics & Mechatronics" */
+/* The tagline keeps the 66ch measure set on p, so it sits on two lines
+   and the masthead holds its original proportions. The spans just stop
+   it breaking inside a phrase -- it wraps at a middot instead. */
 #masthead .tagline .nb { white-space: nowrap; }
 
 /* ---------- compact nav, narrow screens only ---------------
