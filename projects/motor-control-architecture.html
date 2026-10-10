@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Motor Control Architecture &mdash; Blase Londo&ntilde;o</title>
-<meta name="description" content="A CAN bus motor control network on a Raspberry Pi with ODrive controllers, replacing USB for a five-bar legged robot testbed in the Gravish Bioinspired Robotics Lab.">
-<link rel="stylesheet" href="../style.css">
-<link rel="canonical" href="https://blaselondono.com/projects/motor-control-architecture.html">
+<title>Blase Londo&ntilde;o &rsquo;s portfolio</title>
+<meta name="description" content="Blase Londono's portfolio">
+<link rel="stylesheet" href="style.css">
+<link rel="canonical" href="https://blaselondono.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Blase Londo&ntilde;o">
-<meta property="og:title" content="Motor Control Architecture &mdash; Blase Londo&ntilde;o">
-<meta property="og:description" content="A CAN bus motor control network on a Raspberry Pi with ODrive controllers, replacing USB for a five-bar legged robot testbed in the Gravish Bioinspired Robotics Lab.">
-<meta property="og:url" content="https://blaselondono.com/projects/motor-control-architecture.html">
+<meta property="og:title" content="Blase Londo&ntilde;o &rsquo;s portfolio">
+<meta property="og:description" content="Blase Londono's portfolio">
+<meta property="og:url" content="https://blaselondono.com/">
 <meta property="og:image" content="https://blaselondono.com/img/og-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Blase Londo&ntilde;o &mdash; mechanical engineering portfolio">
+<meta property="og:image:alt" content="Blase Londo&ntilde;o &rsquo;s portfolio">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
@@ -83,9 +83,9 @@
 
       <table class="spec">
         <tr><th>Where</th><td>Gravish Bioinspired Robotics Lab, UC San Diego</td></tr>
-        <tr><th>When</th><td>April 2026 &ndash; present</td></tr>
+        <tr><th>When</th><td>2026</td></tr>
         <tr><th>Hardware</th><td>Raspberry Pi on Ubuntu, ODrive v3.6 controllers, Quantum MT5208 motors, absolute encoders</td></tr>
-        <tr><th>Status</th><td>Network up and reachable over SSH; bandwidth validation still to run</td></tr>
+        <tr><th>Status</th><td>Network up and reachable over SSH; still need to do bandwidth validation</td></tr>
       </table>
 
       <figure>
@@ -98,19 +98,19 @@
 
       <p>My lab&rsquo;s five-bar legged locomotion testbed was using direct USB to
       talk to its motor controllers, which introduced enough timing jitter to
-      limit how tightly we could close a control loop. On advice from Yonder
+      limit how tightly we could close a control loop. On advice from my friends on Yonder
       Dynamics&rsquo; software team, I proposed moving to a CAN bus network for more
-      deterministic timing and cleaner scaling as joints get added.</p>
+      deterministic timing and cleaner scaling as more joints get added.</p>
 
       <p>I built it on a Raspberry Pi running Ubuntu, and wired, soldered and
-      configured ODrive v3.6 controllers driving Quantum MT5208 motors, with
+      configured these old ODrive v3.6 controllers driving Quantum MT5208 motors, with
       absolute encoders for feedback. Most of the time went into driver conflicts
       and dependency issues in the legacy testbed code &mdash; years-old browser
       Jupyter, among other things.</p>
 
       <p>The network is up and reachable over SSH, but spring quarter ended before
-      I could run full bandwidth validation. That is the first thing I will do when
-      I am back, along with moving over to ODrive S1 controllers and a Waveshare
+      I could run full bandwidth validation. When I get back I plan to characterize
+      the new system, along with moving over to ODrive S1 controllers and a Waveshare
       CAN HAT for better performance, and cleaner wiring.</p>
 
       <hr>
@@ -121,7 +121,7 @@
 
   <div id="footer">
     <span>&copy; 2026 Blase Londo&ntilde;o &middot; <a href="mailto:blasejlondono@hotmail.com">blasejlondono@hotmail.com</a></span>
-    <span>Hand-written HTML &amp; CSS. No frameworks, no JavaScript.</span>
+    <span>Hand-written (with love) in HTML & CSS.</span>
   </div>
 
 </div>
