@@ -86,7 +86,7 @@
         <tr><th>When</th><td>2025</td></tr>
         <tr><th>Tools</th><td>Altium Designer</td></tr>
         <tr><th>Spec</th><td>24&nbsp;V / 60&nbsp;A, two layers</td></tr>
-        <tr><th>Outcome</th><td>20% smaller footprint; deployed on the competition rover</td></tr>
+        <tr><th>Outcome</th><td>20% smaller footprint; deployed on our competition rover</td></tr>
       </table>
 
       <figure>
@@ -96,16 +96,15 @@
         beside every fuse.</figcaption>
       </figure>
 
-      <p>The rover&rsquo;s power distribution board needed a connector refresh, so
+      <p>Our rover&rsquo;s power distribution board needed a connector refresh (JSTs are pretty hard for us to crimp), so
       while we were at it we took the opportunity to fix a couple of things that
       had been bothering us.</p>
 
-      <p>I rebuilt it as a custom two-layer schematic and layout in Altium,
-      rerouting around the new connectors and cleaning up the architecture. For
-      thermal headroom at worst-case load I used polygon pours around the XF vias
+      <p>I rebuilt this board as a custom two-layer schematic and layout in Altium,
+      rerouting around our new Anderson connectors and cleaning up the layout a bit. For
+      thermal headroom under worst-case load and environmental conditions, I used polygon pours around the XF vias
       and scaled trace widths to each channel&rsquo;s current draw. I also wired an
-      indicator LED in parallel with every fuse, so a blown fuse announces itself
-      instead of having to be probed for.</p>
+      indicator LED in parallel with every fuse.</p>
 
       <p>I populated and soldered the board when it arrived and ran an electrical
       stress test on the traces; it handled around 860&nbsp;W before they burned
@@ -120,7 +119,7 @@
 
   <div id="footer">
     <span>&copy; 2026 Blase Londo&ntilde;o &middot; <a href="mailto:blasejlondono@hotmail.com">blasejlondono@hotmail.com</a></span>
-    <span>Hand-written HTML &amp; CSS. No frameworks, no JavaScript.</span>
+    <span>Hand-written (with love) in HTML &amp; CSS.</span>
   </div>
 
 </div>
