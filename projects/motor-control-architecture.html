@@ -77,11 +77,12 @@
         <tr><th>Status</th><td>Network up and reachable over SSH; bandwidth validation still to run</td></tr>
       </table>
 
-      <!-- swap in the real wiring diagram when it is to hand -->
       <figure>
-        <img src="../img/placeholder.svg" alt="CAN bus wiring diagram">
+        <img src="../img/motor-1.png" alt="Block diagram of the CAN bus motor control architecture">
         <figcaption>A basic wiring diagram I drew for the new CAN bus
-        architecture.</figcaption>
+        architecture: in over SSH to the Raspberry Pi, out through the CAN HAT
+        to the ODrive controllers, with an absolute encoder closing the loop on
+        each motor.</figcaption>
       </figure>
 
       <p>My lab&rsquo;s five-bar legged locomotion testbed was using direct USB to
